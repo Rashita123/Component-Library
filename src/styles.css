@@ -1,0 +1,8 @@
+:root {
+  --dark-green-color: #20a546;
+  --ghost-green-color: #9ae0b580;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
