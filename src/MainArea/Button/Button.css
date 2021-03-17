@@ -39,3 +39,20 @@
   text-decoration: underline;
   text-decoration-color: var(--dark-green-color);
 }
+
+.xs {
+  font-size: var(--xs-font-size);
+  padding: var(--xs-button-padding);
+}
+.sm {
+  font-size: var(--sm-font-size);
+  padding: var(--sm-button-padding);
+}
+.md {
+  font-size: var(--md-font-size);
+  padding: var(--md-button-padding);
+}
+.lg {
+  font-size: var(--lg-font-size);
+  padding: var(--lg-button-padding);
+}
