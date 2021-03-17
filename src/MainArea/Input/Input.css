@@ -1,2 +1,46 @@
-input {
+.input {
+  border-radius: 5px;
+  background: transparent;
+}
+.input:disabled,
+.input[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc90;
+  color: #666666;
+  cursor: not-allowed;
+}
+.input:focus {
+  box-shadow: 0 0 0 5px var(--ghost-green-color);
+  outline: 2px solid var(--ghost-green-color);
+}
+.basic-input {
+  color: black;
+  border: 2px solid grey;
+}
+
+.basic-input::placeholder {
+  color: grey;
+}
+.filled-input {
+  background: #ededed;
+  border: 2px solid grey;
+}
+.filled-input:focus {
+  background: white;
+}
+.xs {
+  font-size: var(--xs-font-size);
+  padding: var(--xs-button-padding);
+}
+.sm {
+  font-size: var(--sm-font-size);
+  padding: var(--sm-button-padding);
+}
+.md {
+  font-size: var(--md-font-size);
+  padding: var(--md-button-padding);
+}
+.lg {
+  font-size: var(--lg-font-size);
+  padding: var(--lg-button-padding);
 }

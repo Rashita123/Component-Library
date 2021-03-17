@@ -1,12 +1,29 @@
 import "./Input.css";
-export const Input = ({ type, placeholder }) => {
+export const Input = ({
+  inputType,
+  placeholder,
+  variant,
+  size,
+  isDisabled,
+  isRequired
+}) => {
   return (
     <div>
-      <input type={type} placeholder={placeholder}></input>
+      <input
+        required={isRequired}
+        disabled={isDisabled}
+        className={`input ${variant}-input ${size}`}
+        type={inputType}
+        placeholder={placeholder}
+      ></input>
     </div>
   );
 };
 Input.defaultProps = {
-  type: "text",
-  placeholder: "Enter some text"
+  inputType: "text",
+  placeholder: "Enter some text",
+  variant: "basic",
+  size: "sm",
+  isDisabled: false,
+  isRequired: false
 };

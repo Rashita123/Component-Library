@@ -5,9 +5,9 @@ import { Input } from "./MainArea/Input/Input";
 export default function App() {
   return (
     <div className="App">
-      <Button text="Button" type="primary" size="lg" />
+      <Button text="Button" type="secondaryToPrimary" size="md" />
       <Toast text="Success" type="success" />
-      <Input />
+      <Input size="md" isDisabled={false} isRequired={true} />
     </div>
   );
 }
