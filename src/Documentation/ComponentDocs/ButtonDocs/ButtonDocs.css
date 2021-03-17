@@ -1,0 +1,19 @@
+.green-text {
+  color: var(--dark-green-color);
+}
+.usage {
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+.usage > * {
+  margin-right: 0.5rem;
+}
+iframe {
+  margin-bottom: 1rem;
+}
+code {
+  color: var(--dark-green-color);
+  font-size: 20px;
+}

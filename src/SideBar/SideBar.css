@@ -4,6 +4,7 @@
   align-items: flex-start;
   border-left: 1px solid var(--dark-green-color);
   margin: 0;
+  flex: 1;
 }
 .searchbar {
   display: flex;

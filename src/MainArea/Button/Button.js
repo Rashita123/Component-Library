@@ -1,14 +1,14 @@
 import "./Button.css";
-export const Button = ({ text, type, size }) => {
+export const Button = ({ text, variant, size }) => {
   return (
-    <div>
-      <button className={`button ${type}-button ${size}`}>{text}</button>
-    </div>
+    <>
+      <button className={`button ${variant}-button ${size}`}>{text}</button>
+    </>
   );
 };
 
 Button.defaultProps = {
   text: "Button",
-  type: "primary",
+  variant: "primary",
   size: "md"
 };
