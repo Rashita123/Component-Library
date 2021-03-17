@@ -15,7 +15,7 @@
 }
 
 .basic-input::placeholder {
-  color: grey;
+  color: #bbbbbb;
 }
 .basic-input:focus {
   box-shadow: 0 0 0 5px var(--ghost-green-color);
@@ -27,6 +27,8 @@
 }
 .filled-input:focus {
   background: white;
+  box-shadow: 0 0 0 5px var(--ghost-green-color);
+  outline: 2px solid var(--ghost-green-color);
 }
 .flushed-input {
   border: none;
