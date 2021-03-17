@@ -1,0 +1,31 @@
+.container {
+  width: 60%;
+  margin: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.fork-ui-heading {
+  color: var(--dark-green-color);
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav > a {
+  margin-left: 0.85rem;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s ease-out;
+}
+.header-nav > a:hover {
+  color: var(--dark-green-color);
+  border-bottom: 3px solid var(--dark-green-color);
+}
