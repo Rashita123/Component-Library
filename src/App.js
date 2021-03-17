@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div className="App">
       <Button text="Button" type="secondary" size="md" />
-      <Toast text="Success" type="Success" />
+      <Toast text="Success" type="success" />
     </div>
   );
 }

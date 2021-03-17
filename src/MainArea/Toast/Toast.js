@@ -1,21 +1,47 @@
 import "./Toast.css";
-export const Toast = ({ text, type }) => {
+import { useEffect, useState } from "react";
+export const Toast = ({ text, type, position, duration }) => {
+  const [displayToast, setDisplayToast] = useState("flex");
+  useEffect(() => {
+    setTimeout(() => {
+      setDisplayToast("none");
+    }, [duration]);
+  });
   const toastTypeDatabase = {
     success: {
       bgColor: "#bdfcc9",
       borderColor: "green",
-      alt: "success-notification-icon",
+      alt: "success",
       src: "https://img.icons8.com/fluent/48/000000/checked.png"
+    },
+    info: {
+      bgColor: "#ade2e6",
+      borderColor: "blue",
+      alt: "Info",
+      src: "https://img.icons8.com/flat-round/50/000000/info.png"
+    },
+    warning: {
+      bgColor: "#ffdb99",
+      borderColor: "orange",
+      alt: "warning",
+      src: ""
+    },
+    error: {
+      bgColor: "#FFCCCC",
+      borderColor: "red",
+      alt: "error",
+      src: ""
     }
   };
   return (
     <div
       style={{
+        display: [displayToast],
         borderTop: "2px solid",
         borderColor: [toastTypeDatabase[type].borderColor],
         background: [toastTypeDatabase[type].bgColor]
       }}
-      className={`toast ${type}`}
+      className={`toast ${position}`}
     >
       <img
         scr={toastTypeDatabase[type].src}
@@ -23,8 +49,8 @@ export const Toast = ({ text, type }) => {
       />
       <p>{text}</p>
       <svg
-        // onClick={hideButtonHandler}
-        class="svg-icon"
+        onClick={() => setDisplayToast("none")}
+        className="svg-icon"
         style={{
           stroke: toastTypeDatabase[type].borderColor,
           cursor: "pointer"
@@ -35,4 +61,11 @@ export const Toast = ({ text, type }) => {
       </svg>
     </div>
   );
+};
+
+Toast.defaultProps = {
+  text: "Success",
+  type: "success",
+  position: "bottom-left",
+  duration: 3000
 };
