@@ -29,3 +29,12 @@
   color: var(--dark-green-color);
   border-bottom: 3px solid var(--dark-green-color);
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100vw;
+  }
+  .header {
+    justify-content: flex-start;
+  }
+}
