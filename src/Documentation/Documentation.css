@@ -8,7 +8,7 @@
 
 @media only screen and (max-width: 600px) {
   .documentation {
-    width: 95%;
+    width: 90vw;
     margin: auto;
   }
 }
