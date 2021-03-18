@@ -8,17 +8,13 @@ export const InputDocs = () => {
       <div class="usage">
         <Input placeholder="Basic Input" />
       </div>
-      <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CInput%2520placeholder%253D%2522Basic%2520Input%2522%252F%253E%250A"
-        style={{
-          width: "800px",
-          height: "223px",
-          border: 0,
-          transform: "scale(1)",
-          overflow: "hidden"
-        }}
-        sandbox="allow-scripts allow-same-origin"
-      ></iframe>
+      <div className="wrapper">
+        <iframe
+          title="Inout-code-usage"
+          src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CInput%2520placeholder%253D%2522Basic%2520Input%2522%252F%253E"
+          sandbox="allow-scripts allow-same-origin"
+        ></iframe>
+      </div>
 
       <h3>Changing the size of the Input</h3>
       <p>
@@ -32,17 +28,13 @@ export const InputDocs = () => {
         <Input size="md" />
         <Input size="lg" />
       </div>
-      <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%253CInput%2520placeholder%253D%2522extra%2520small%2520input%2522%2520size%253D%2522xs%2522%2520%252F%253E%250A%2520%2520%2520%253CInput%2520placeholder%253D%2522small%2520input%2522%2520size%253D%2522sm%2522%2520%252F%253E%250A%2520%2520%2520%253CInput%2520size%253D%2522md%2522%2520%252F%253E%250A%2520%2520%2520%253CInput%2520size%253D%2522lg%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
-        style={{
-          width: "800px",
-          height: "297px",
-          border: 0,
-          transform: "scale(1)",
-          overflow: "hidden"
-        }}
-        sandbox="allow-scripts allow-same-origin"
-      ></iframe>
+      <div className="wrapper">
+        <iframe
+          title="input-code-size"
+          src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%253CInput%2520placeholder%253D%2522extra%2520small%2520input%2522%2520size%253D%2522xs%2522%2520%252F%253E%250A%2520%2520%2520%253CInput%2520placeholder%253D%2522small%2520input%2522%2520size%253D%2522sm%2522%2520%252F%253E%250A%2520%2520%2520%253CInput%2520size%253D%2522md%2522%2520%252F%253E%250A%2520%2520%2520%253CInput%2520size%253D%2522lg%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
+          sandbox="allow-scripts allow-same-origin"
+        ></iframe>
+      </div>
       <h3>Input Box Variants</h3>
       <p>
         Use <code>Variants</code> prop to have 4 different appearances of input
@@ -56,17 +48,20 @@ export const InputDocs = () => {
         <Input variant="flushed" />
         <Input variant="unstyled" />
       </div>
-      <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%2520%253CInput%2520variant%253D%2522basic%2522%252F%253E%250A%2520%2520%2520%2520%253CInput%2520variant%253D%2522filled%2522%252F%253E%250A%2520%2520%2520%2520%253CInput%2520variant%253D%2522flushed%2522%252F%253E%250A%2520%2520%2520%2520%253CInput%2520variant%253D%2522unstyled%2522%252F%253E%250A%253C%252Fdiv%253E"
-        style={{
-          width: "800px",
-          height: "297px",
-          border: 0,
-          transform: "scale(1)",
-          overflow: "hidden"
-        }}
-        sandbox="allow-scripts allow-same-origin"
-      ></iframe>
+      <div className="wrapper">
+        <iframe
+          title="inout-code-variants"
+          src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%2520%253CInput%2520variant%253D%2522basic%2522%252F%253E%250A%2520%2520%2520%2520%253CInput%2520variant%253D%2522filled%2522%252F%253E%250A%2520%2520%2520%2520%253CInput%2520variant%253D%2522flushed%2522%252F%253E%250A%2520%2520%2520%2520%253CInput%2520variant%253D%2522unstyled%2522%252F%253E%250A%253C%252Fdiv%253E"
+          sandbox="allow-scripts allow-same-origin"
+        ></iframe>
+      </div>
+      <h3>Different Inout Type Buttons</h3>
+      <p>
+        Buttons can be set to store different type of values, like{" "}
+        <code>text</code>, <code>password</code> using the{" "}
+        <code>inputType</code> prop. The default value is set to{" "}
+        <code>text</code>
+      </p>
     </div>
   );
 };
