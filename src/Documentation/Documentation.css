@@ -1,8 +1,14 @@
 .documentation {
-  width: 95%;
-  margin: auto;
+  width: 70%;
+  /* margin: auto; */
   margin-right: 3rem;
   margin-top: 2rem;
-  overflow: hidden;
   box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  .documentation {
+    width: 95%;
+    margin: auto;
+  }
 }
