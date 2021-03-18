@@ -55,13 +55,41 @@ export const InputDocs = () => {
           sandbox="allow-scripts allow-same-origin"
         ></iframe>
       </div>
-      <h3>Different Inout Type Buttons</h3>
+      <h3>Different Input Type Buttons</h3>
       <p>
         Buttons can be set to store different type of values, like{" "}
         <code>text</code>, <code>password</code> using the{" "}
         <code>inputType</code> prop. The default value is set to{" "}
         <code>text</code>
       </p>
+      <div className="usage">
+        <Input inputType="text" />
+        <Input inputType="password" placeholder="Enter password" />
+      </div>
+      <div className="wrapper">
+        <iframe
+          title="input-type"
+          src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%253CInput%2520inputType%253D%2522text%2522%252F%253E%250A%2520%2520%2520%253CInput%2520inputType%253D%2522password%2522%2520placeholder%253D%2522Enter%2520password%2522%252F%253E%250A%253C%252Fdiv%253E"
+          sandbox="allow-scripts allow-same-origin"
+        ></iframe>
+      </div>
+      <h3>Disabled Input</h3>
+      <p>
+        Use <code>isDisabled</code> prop to set the disabled value of the input
+        to <code>true</code> or <code>false</code>. By default value is{" "}
+        <code>false</code>.
+      </p>
+      <div class="usage">
+        <Input isDisabled={true} />
+        <Input isDisabled={false} />
+      </div>
+      <div className="wrapper">
+        <iframe
+          title="disabled input"
+          src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%253CInput%2520isDisabled%253D%257Btrue%257D%2520%252F%253E%250A%2520%2520%2520%253CInput%2520isDisabled%253D%257Bfalse%257D%2520%252F%253E%250A%253C%252Fdiv%253E"
+          sandbox="allow-scripts allow-same-origin"
+        ></iframe>
+      </div>
     </div>
   );
 };
