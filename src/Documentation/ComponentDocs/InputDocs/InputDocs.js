@@ -5,7 +5,7 @@ export const InputDocs = () => {
     <div>
       <h1>Input</h1>
       <h3>Usage</h3>
-      <div class="usage">
+      <div className="usage">
         <Input placeholder="Basic Input" />
       </div>
       <div className="wrapper">
@@ -42,7 +42,7 @@ export const InputDocs = () => {
         <code>unstyled</code>. The default variant of Input is{" "}
         <code>basic</code>
       </p>
-      <div class="usage">
+      <div className="usage">
         <Input variant="basic" />
         <Input variant="filled" />
         <Input variant="flushed" />
@@ -79,7 +79,7 @@ export const InputDocs = () => {
         to <code>true</code> or <code>false</code>. By default value is{" "}
         <code>false</code>.
       </p>
-      <div class="usage">
+      <div className="usage">
         <Input isDisabled={true} />
         <Input isDisabled={false} />
       </div>

@@ -1,10 +1,17 @@
 import "./Documentation.css";
-import { ButtonDocs, InputDocs } from "./ComponentDocs";
+import { useDocsContext } from "../ViewContext";
+import { ButtonDocs, InputDocs, AvatarDocs } from "./ComponentDocs";
 export const Documentation = () => {
+  const { docsComponentToDisplay } = useDocsContext();
+  console.log(docsComponentToDisplay);
   return (
     <div className="documentation">
-      <InputDocs />
+      {docsComponentToDisplay === "Button" && <ButtonDocs />}
+      {docsComponentToDisplay === "Input" && <InputDocs />}
+      {docsComponentToDisplay === "Avatar" && <AvatarDocs />}
+      {/* <InputDocs /> */}
       {/* <ButtonDocs /> */}
+      {/* <AvatarDocs /> */}
     </div>
   );
 };

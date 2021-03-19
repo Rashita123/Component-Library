@@ -1,7 +1,9 @@
 import "./SideBar.css";
+import { useDocsContext } from "../ViewContext";
 import { Input } from "../MainArea/Input/Input";
 import { ComponentsDatabse } from "./ComponentsDatabse";
 export const SideBar = () => {
+  const { setDocsComponentToDisplay } = useDocsContext();
   return (
     <div className="sidebar">
       <div className="searchbar">
@@ -42,7 +44,9 @@ export const SideBar = () => {
       <div className="listing">
         <h2>Getting Started</h2>
         {ComponentsDatabse.map((listItem, index) => (
-          <p key={index}>{listItem}</p>
+          <p onClick={() => setDocsComponentToDisplay(listItem)} key={index}>
+            {listItem}
+          </p>
         ))}
       </div>
     </div>
