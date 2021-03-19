@@ -28,7 +28,7 @@
 .listing > h2 {
   margin-left: 2rem;
 }
-.listing > p {
+.listing > .title {
   border-left: 3px solid white;
   align-self: flex-start;
   padding-left: 2rem;
@@ -39,14 +39,15 @@
   color: #1b1d1d;
 }
 
-.listing > p:hover {
+.listing > .title:hover {
   color: var(--dark-green-color);
   cursor: pointer;
   border-left: 3px solid var(--dark-green-color);
 }
-.listing > p:active {
+.listing > .title-active {
   color: var(--dark-green-color);
   font-weight: 600;
+  border-left: 3px solid var(--dark-green-color);
 }
 @media only screen and (max-width: 600px) {
   .sidebar {
