@@ -1,4 +1,8 @@
 import "./Toast.css";
+import { FcInfo } from "react-icons/fc";
+import { MdError } from "react-icons/md";
+import { TiTick } from "react-icons/ti";
+import { MdWarning } from "react-icons/md";
 import { useEffect, useState } from "react";
 export const Toast = ({ text, type, position, duration }) => {
   const [displayToast, setDisplayToast] = useState("flex");
@@ -11,26 +15,22 @@ export const Toast = ({ text, type, position, duration }) => {
     success: {
       bgColor: "#bdfcc9",
       borderColor: "green",
-      alt: "success",
-      src: "https://img.icons8.com/fluent/48/000000/checked.png"
+      icon: <TiTick size={50} color="green" />
     },
     info: {
       bgColor: "#ade2e6",
       borderColor: "blue",
-      alt: "Info",
-      src: "https://img.icons8.com/flat-round/50/000000/info.png"
+      icon: <FcInfo size={50} />
     },
     warning: {
       bgColor: "#ffdb99",
       borderColor: "orange",
-      alt: "warning",
-      src: ""
+      icon: <MdWarning size={50} color="orange" />
     },
     error: {
       bgColor: "#FFCCCC",
       borderColor: "red",
-      alt: "error",
-      src: ""
+      icon: <MdError size={50} color="red" />
     }
   };
   return (
@@ -43,10 +43,7 @@ export const Toast = ({ text, type, position, duration }) => {
       }}
       className={`toast ${position}`}
     >
-      <img
-        scr={toastTypeDatabase[type].src}
-        alt={toastTypeDatabase[type].alt}
-      />
+      {toastTypeDatabase[type].icon}
       <p>{text}</p>
       <svg
         onClick={() => setDisplayToast("none")}

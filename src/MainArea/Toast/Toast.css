@@ -1,14 +1,20 @@
 .toast {
   display: flex;
-  width: 250px;
-  justify-content: space-between;
+  width: 230px;
+  justify-content: flex-start;
   padding: 0.5rem;
   border-radius: 3px;
   position: fixed;
 }
+.toast > p {
+  margin-left: 2rem;
+}
 .svg-icon {
   width: 1em;
   height: 1em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .svg-icon path,
@@ -37,4 +43,8 @@
 .bottom-left {
   bottom: 10px;
   left: 10px;
+}
+.toast-icon {
+  height: 10rem;
+  width: 10rem;
 }

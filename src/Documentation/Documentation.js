@@ -1,6 +1,6 @@
 import "./Documentation.css";
 import { useDocsContext } from "../ViewContext";
-import { ButtonDocs, InputDocs, AvatarDocs } from "./ComponentDocs";
+import { ButtonDocs, InputDocs, AvatarDocs, ToastDocs } from "./ComponentDocs";
 export const Documentation = () => {
   const { docsComponentToDisplay } = useDocsContext();
   return (
@@ -9,6 +9,7 @@ export const Documentation = () => {
       {docsComponentToDisplay === "Button" && <ButtonDocs />}
       {docsComponentToDisplay === "Input" && <InputDocs />}
       {docsComponentToDisplay === "Avatar" && <AvatarDocs />}
+      {docsComponentToDisplay === "Toast" && <ToastDocs />}
     </div>
   );
 };
