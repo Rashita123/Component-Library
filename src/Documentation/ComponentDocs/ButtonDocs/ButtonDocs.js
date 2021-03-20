@@ -64,6 +64,23 @@ export const ButtonDocs = () => {
           sandbox="allow-scripts allow-same-origin"
         ></iframe>
       </div>
+
+      <h3>Color Schemes</h3>
+      <p>
+        <code>colorScheme</code> prop is used to change the color scheme of the
+        button of any variant. The default value is <code>light green</code>,
+        which doesn't need to be passed. Other available option is{" "}
+        <code>red</code>.
+      </p>
+      <p>
+        <code>Note: </code> Only one color scheme, i.e. red is available as of
+        now. More will be added soon.
+      </p>
+
+      <div className="usage">
+        <Button variant="secondary" />
+        <Button colorScheme="red" variant="secondary" />
+      </div>
     </div>
   );
 };

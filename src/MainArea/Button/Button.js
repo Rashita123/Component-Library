@@ -1,8 +1,10 @@
 import "./Button.css";
-export const Button = ({ text, variant, size }) => {
+export const Button = ({ text, variant, size, colorScheme }) => {
   return (
     <>
-      <button className={`button ${variant}-button ${size}-button`}>
+      <button
+        className={`button ${variant}-button${colorScheme} ${size}-button`}
+      >
         {text}
       </button>
     </>
@@ -12,5 +14,6 @@ export const Button = ({ text, variant, size }) => {
 Button.defaultProps = {
   text: "Button",
   variant: "primary",
-  size: "md"
+  size: "md",
+  colorScheme: ""
 };

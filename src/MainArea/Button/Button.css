@@ -66,6 +66,68 @@
   color: white;
   border: 2px solid var(--dark-green-color);
 }
+
+/* // css for red color buttons */
+
+.primary-buttonred {
+  background: #ef4444;
+  border: 2px solid #ef4444;
+  color: white;
+  border: none;
+}
+.primary-buttonred:hover {
+  background: #ef4444;
+  opacity: 0.7;
+}
+.secondary-buttonred {
+  color: #ef4444;
+  border: 2px solid #ef4444;
+}
+.secondary-buttonred:hover {
+  color: #ef4444;
+  border: 2px solid #ef4444;
+  opacity: 0.9;
+}
+.ghost-buttonred {
+  color: #ef4444;
+}
+.ghost-buttonred:hover {
+  background: #fecaca;
+}
+.underline-buttonred {
+  color: #ef4444;
+}
+.underline-buttonred:focus {
+  outline: none;
+  box-shadow: none;
+}
+.underline-buttonred:hover {
+  text-decoration: underline;
+  text-decoration-color: #ef4444;
+}
+
+.primaryToSecondary-buttonred {
+  background: #ef4444;
+  color: white;
+  border: 2px solid #ef4444;
+}
+.primaryToSecondary-buttonred:hover {
+  color: #ef4444;
+  border: 2px solid #ef4444;
+  background: transparent;
+}
+.secondaryToPrimary-buttonred {
+  color: #ef4444;
+  border: 2px solid #ef4444;
+  background: transparent;
+}
+.secondaryToPrimary-buttonred:hover {
+  background: #ef4444;
+  color: white;
+  border: 2px solid #ef4444;
+}
+
+/* // size CSS start */
 .xs-button {
   font-size: var(--xs-font-size);
   padding: var(--xs-button-padding);
