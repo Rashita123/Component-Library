@@ -9,6 +9,13 @@
   box-shadow: 0 0 0 5px var(--ghost-green-color);
   outline: 2px solid var(--ghost-green-color);
 }
+.button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.button:disabled:hover {
+  opacity: 0.4;
+}
 .primary-button {
   background: var(--dark-green-color);
   border: 2px solid var(--dark-green-color);

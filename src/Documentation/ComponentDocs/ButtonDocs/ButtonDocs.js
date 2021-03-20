@@ -81,6 +81,17 @@ export const ButtonDocs = () => {
         <Button variant="secondary" />
         <Button colorScheme="red" variant="secondary" />
       </div>
+
+      <h3>Disable Buttons</h3>
+      <p>
+        <code>isDisabled</code> prop is used to disable the button. Possible
+        values for this prop is true or false. The default value is{" "}
+        <code>false</code>.
+      </p>
+      <div className="usage">
+        <Button isDisabled="true" />
+        <Button variant="secondary" isDisabled="true" />
+      </div>
     </div>
   );
 };
