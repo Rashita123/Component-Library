@@ -1,9 +1,25 @@
-.input[type="checkbox"] {
-  width: 0;
+.checkbox > input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
   height: 0;
+  width: 0;
 }
-.input[type="checkbox"] {
+.input-checkbox {
   width: 20px;
   height: 20px;
   border: 2px solid green;
+}
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkbox > span {
+  margin-left: 0.5rem;
+}
+.input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 3px var(--ghost-green-color);
+  outline: 1px solid var(--ghost-green-color);
 }

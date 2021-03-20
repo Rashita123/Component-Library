@@ -2,6 +2,7 @@ export const ComponentsDatabse = [
   "Avatar",
   "Alert",
   "Toast",
+  "Checkbox",
   "Button",
   "Badge",
   "Card",
