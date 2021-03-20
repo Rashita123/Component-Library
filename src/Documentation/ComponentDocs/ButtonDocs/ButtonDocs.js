@@ -1,4 +1,7 @@
 import "./ButtonDocs.css";
+import { HiOutlineMail } from "react-icons/hi";
+import { BiRightArrowAlt } from "react-icons/bi";
+import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { Button } from "../../../MainArea/Button/Button";
 export const ButtonDocs = () => {
   return (
@@ -49,7 +52,7 @@ export const ButtonDocs = () => {
         <code>primaryToSecondary</code>, <code>secondaryToPrimary</code>.
       </p>
 
-      <div className="usage">
+      <div className="usage make-flex">
         <Button variant="primary" />
         <Button variant="secondary" />
         <Button variant="ghost" />
@@ -77,7 +80,7 @@ export const ButtonDocs = () => {
         now. More will be added soon.
       </p>
 
-      <div className="usage">
+      <div className="usage make-flex">
         <Button variant="secondary" />
         <Button colorScheme="red" variant="secondary" />
       </div>
@@ -88,9 +91,49 @@ export const ButtonDocs = () => {
         values for this prop is true or false. The default value is{" "}
         <code>false</code>.
       </p>
-      <div className="usage">
+      <div className="usage make-flex">
         <Button isDisabled="true" />
         <Button variant="secondary" isDisabled="true" />
+      </div>
+
+      <h3>Button with Icon</h3>
+      <p>
+        You can add left and right icons to the Button component using the{" "}
+        <code>leftIcon</code> and <code>rightIcon</code> props respectively.
+      </p>
+      <div class="usage make-flex">
+        <Button leftIcon={<HiOutlineMail />} text="Email" />
+        <Button
+          rightIcon={<BiRightArrowAlt />}
+          text="Next"
+          variant="secondary"
+        />
+      </div>
+      <h3>Social Buttons</h3>
+      <p>
+        We've included the colors for common social media platforms, and you can
+        simply use their buttons via the <code>colorScheme</code> prop.
+      </p>
+      <div className="usage make-flex">
+        <Button leftIcon={<FaFacebook />} colorScheme="fb" text="Facebook" />
+        <Button leftIcon={<FaTwitter />} colorScheme="twitter" text="Twitter" />
+      </div>
+      <p>
+        The Social Media Buttons can have variants and different sizes as well.
+      </p>
+      <div className="usage make-flex">
+        <Button
+          leftIcon={<FaFacebook />}
+          colorScheme="fb"
+          variant="secondary"
+          text="Facebook"
+        />
+        <Button
+          leftIcon={<FaTwitter />}
+          colorScheme="twitter"
+          variant="ghost"
+          text="Twitter"
+        />
       </div>
     </div>
   );

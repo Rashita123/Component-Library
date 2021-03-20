@@ -6,9 +6,9 @@
   --md-font-size: 1rem;
   --lg-font-size: 1.125rem;
   --xs-button-padding: 0.25rem 0.5rem;
-  --sm-button-padding: 0.5rem 0.75rem;
-  --md-button-padding: 0.75rem 1rem;
-  --lg-button-padding: 1rem 1.25rem;
+  --sm-button-padding: 0.45rem 0.85rem;
+  --md-button-padding: 0.55rem 1rem;
+  --lg-button-padding: 0.75rem 1.25rem;
 }
 .App {
   font-family: sans-serif;

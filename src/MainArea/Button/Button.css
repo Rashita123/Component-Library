@@ -39,7 +39,7 @@
   color: var(--dark-green-color);
 }
 .ghost-button:hover {
-  background: var(--ghost-green-color);
+  background: #ecfdf5;
 }
 .underline-button {
   color: var(--dark-green-color);
@@ -134,6 +134,126 @@
   border: 2px solid #ef4444;
 }
 
+/* Faceboook buttons */
+
+.primary-buttonfb {
+  background: #385898;
+  border: 2px solid #385898;
+  color: white;
+  border: none;
+  opacity: 0.9;
+}
+.primary-buttonfb:hover {
+  background: #314e89;
+  opacity: 1;
+}
+.secondary-buttonfb {
+  color: #385898;
+  border: 2px solid #385898;
+}
+.secondary-buttonfb:hover {
+  color: #385898;
+  border: 2px solid #314e89;
+}
+.ghost-buttonfb {
+  color: #385898;
+}
+.ghost-buttonfb:hover {
+  background: #c7d2fe;
+}
+.underline-buttonfb {
+  color: #385898;
+}
+.underline-buttonfb:focus {
+  outline: none;
+  box-shadow: none;
+}
+.underline-buttonfb:hover {
+  text-decoration: underline;
+  text-decoration-color: #314e89;
+}
+
+.primaryToSecondary-buttonfb {
+  background: #385898;
+  color: white;
+  border: 2px solid #385898;
+}
+.primaryToSecondary-buttonfb:hover {
+  color: #385898;
+  border: 2px solid #385898;
+  background: transparent;
+}
+.secondaryToPrimary-buttonfb {
+  color: #385898;
+  border: 2px solid #385898;
+  background: transparent;
+}
+.secondaryToPrimary-buttonfb:hover {
+  background: #385898;
+  color: white;
+  border: 2px solid #385898;
+}
+
+/* Twitter buttons */
+
+.primary-buttontwitter {
+  background: #1da1f2;
+  border: 2px solid #1da1f2;
+  color: white;
+  border: none;
+  opacity: 0.9;
+}
+.primary-buttontwitter:hover {
+  background: #1a94da;
+  opacity: 1;
+}
+.secondary-buttontwitter {
+  color: #1da1f2;
+  border: 2px solid #1da1f2;
+}
+.secondary-buttontwitter:hover {
+  color: #1da1f2;
+  border: 2px solid #1a94da;
+}
+.ghost-buttontwitter {
+  color: #1da1f2;
+}
+.ghost-buttontwitter:hover {
+  background: #eff6ff;
+}
+.underline-buttontwitter {
+  color: #1da1f2;
+}
+.underline-buttontwitter:focus {
+  outline: none;
+  box-shadow: none;
+}
+.underline-buttontwitter:hover {
+  text-decoration: underline;
+  text-decoration-color: #1a94da;
+}
+
+.primaryToSecondary-buttontwitter {
+  background: #1da1f2;
+  color: white;
+  border: 2px solid #1da1f2;
+}
+.primaryToSecondary-buttontwitter:hover {
+  color: #1da1f2;
+  border: 2px solid #1da1f2;
+  background: transparent;
+}
+.secondaryToPrimary-buttontwitter {
+  color: #1da1f2;
+  border: 2px solid #1da1f2;
+  background: transparent;
+}
+.secondaryToPrimary-buttontwitter:hover {
+  background: #1da1f2;
+  color: white;
+  border: 2px solid #1da1f2;
+}
+
 /* // size CSS start */
 .xs-button {
   font-size: var(--xs-font-size);
@@ -150,4 +270,16 @@
 .lg-button {
   font-size: var(--lg-font-size);
   padding: var(--lg-button-padding);
+}
+
+.icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-button :nth-child(1) {
+  margin-right: 0.5rem;
+}
+.icon-button :nth-child(3) {
+  margin-left: 0.5rem;
 }
