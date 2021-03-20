@@ -64,5 +64,5 @@ Toast.defaultProps = {
   text: "Success",
   type: "success",
   position: "bottom-left",
-  duration: 3000
+  duration: 5000
 };
