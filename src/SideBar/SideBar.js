@@ -48,7 +48,7 @@ export const SideBar = () => {
         <h2>Getting Started</h2>
         {ComponentsDatabse.map((listItem, index) => (
           <p
-            class={
+            className={
               docsComponentToDisplay === listItem
                 ? "title title-active"
                 : "title"

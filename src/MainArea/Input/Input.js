@@ -12,7 +12,7 @@ export const Input = ({
       <input
         required={isRequired}
         disabled={isDisabled}
-        className={`input ${variant}-input ${size}`}
+        className={`input ${variant}-input ${size}-input`}
         type={inputType}
         placeholder={placeholder}
       ></input>

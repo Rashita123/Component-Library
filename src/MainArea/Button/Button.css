@@ -66,19 +66,19 @@
   color: white;
   border: 2px solid var(--dark-green-color);
 }
-.xs {
+.xs-button {
   font-size: var(--xs-font-size);
   padding: var(--xs-button-padding);
 }
-.sm {
+.sm-button {
   font-size: var(--sm-font-size);
   padding: var(--sm-button-padding);
 }
-.md {
+.md-button {
   font-size: var(--md-font-size);
   padding: var(--md-button-padding);
 }
-.lg {
+.lg-button {
   font-size: var(--lg-font-size);
   padding: var(--lg-button-padding);
 }
