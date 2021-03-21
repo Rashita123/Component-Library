@@ -1,4 +1,5 @@
 import { Avatar } from "../../../MainArea/Avatar/Avatar";
+import Gist from "react-gist";
 export const AvatarDocs = () => {
   return (
     <div>
@@ -34,46 +35,22 @@ export const AvatarDocs = () => {
         <Avatar src="https://bit.ly/3c4LwLJ" />
         <Avatar src="https://bit.ly/3qZAJqc" />
       </div>
-      <div className="wrapper">
-        <iframe
-          title="avatar-usage"
-          src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C1%29&t=3024-night&wt=none&l=javascript&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253CAvatar%2520src%253D%2522https%253A%252F%252Fbit.ly%252F3f5KrFn%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253CAvatar%2520src%253D%2522https%253A%252F%252Fbit.ly%252F3c4LwLJ%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253CAvatar%2520src%253D%2522https%253A%252F%252Fbit.ly%252F3qZAJqc%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
-          sandbox="allow-scripts allow-same-origin"
-        ></iframe>
-      </div>
-
+      <Gist id="8bcef539fe86468fc35099c06790b3b6" />
+      <h3>Avatars of different Sizes</h3>
       <p>
         <code>size</code> prop can be used to set the size of your avatars.
         Possible values are: <code>xs, sm, md, lg, xlg, xxlg</code>. The default
         value is: <code>lg</code>
       </p>
       <div className="usage make-flex">
-        <Avatar
-          size="xs"
-          src="https://images.unsplash.com/photo-1612041714878-997e3fe9cd13?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=809&q=80"
-        />
-        <Avatar
-          size="sm"
-          src="https://images.unsplash.com/photo-1559563526-cff7656d1ae6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzl8fGZhY2V8ZW58MHwyfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        />
-        <Avatar
-          size="md"
-          src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjV8fGZhY2V8ZW58MHwyfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        />
-        <Avatar
-          size="lg"
-          src="https://images.unsplash.com/photo-1612041714878-997e3fe9cd13?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=809&q=80"
-        />
-        <Avatar
-          size="xlg"
-          src="https://images.unsplash.com/photo-1559563526-cff7656d1ae6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzl8fGZhY2V8ZW58MHwyfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        />
-        <Avatar
-          size="xxlg"
-          src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjV8fGZhY2V8ZW58MHwyfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        />
+        <Avatar size="xs" src="https://bit.ly/3cQDipG" />
+        <Avatar size="sm" src="https://bit.ly/2OMFBSI" />
+        <Avatar size="md" src="https://bit.ly/314V1E8" />
+        <Avatar size="lg" src="https://bit.ly/3cQDipG" />
+        <Avatar size="xlg" src="https://bit.ly/2OMFBSI" />
+        <Avatar size="xxlg" src="https://bit.ly/314V1E8" />
       </div>
-
+      <Gist id="cbdf8e9da74aa3822308ed8537087278" />
       <h3>Avatar Fallbacks</h3>
       <p>
         If a broken Image link is passed as a prop, the initials of the name
@@ -85,7 +62,7 @@ export const AvatarDocs = () => {
         <Avatar name="Williams Liam" src="https://bit.ly/broken-link" />
         <Avatar src="https://bit.ly/broken-link" />
       </div>
-
+      <Gist id="02c399a91c81d6a02b7bbb41a64ef019" />
       <h3>Customize the Background Color of Fallback Avatars</h3>
       <p>
         <code>bgColor</code> prop is used to change the background color of the
@@ -100,6 +77,7 @@ export const AvatarDocs = () => {
         <Avatar name="Abraham Lincoln" bgColor="lightblue" />
         <Avatar fallBackColor="salmon" />
       </div>
+      <Gist id="7f664b0aa6142ec3cf93c54a1bbe0d8a" />
     </div>
   );
 };
