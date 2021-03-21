@@ -1,4 +1,5 @@
 import "./ImageDocs.css";
+import Gist from "react-gist";
 import { Image } from "../../../MainArea/Image/Image";
 export const ImageDocs = ({ src, alt }) => {
   return (
@@ -9,6 +10,7 @@ export const ImageDocs = ({ src, alt }) => {
       <div className="usage">
         <Image src="https://bit.ly/3qZAJqc" />
       </div>
+      <Gist id="9c521af5bb9a308eeb658b1346b5c874" />
       <h2>Various Sizes Images</h2>
       <p>
         Use <code>size</code> prop to change the size of the image. Available
@@ -20,6 +22,7 @@ export const ImageDocs = ({ src, alt }) => {
         <Image src="https://bit.ly/3qZAJqc" size="md" />
         <Image src="https://bit.ly/3qZAJqc" size="lg" />
       </div>
+      <Gist id="d720c01376ace08d2deaccd1a25274a3" />
       <h3>Image with border radius</h3>
       <p>
         We can set the border-radius to different values using the{" "}
@@ -31,6 +34,7 @@ export const ImageDocs = ({ src, alt }) => {
         <Image src="https://bit.ly/3qZAJqc" borderSize="b2" />
         <Image src="https://bit.ly/3qZAJqc" borderSize="full" />
       </div>
+      <Gist id="3bdcf4b85abeea04f926ed0fbfc899cf" />
 
       <h3>FallBack Support</h3>
       <p>
@@ -43,6 +47,7 @@ export const ImageDocs = ({ src, alt }) => {
           fallBackSrc="https://via.placeholder.com/150"
         />
       </div>
+      <Gist id="d73ff13132b4319c3f174f6cacfbf7d0" />
     </div>
   );
 };
