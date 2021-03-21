@@ -1,4 +1,5 @@
 import "./ButtonDocs.css";
+import Gist from "react-gist";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { MdNavigateNext } from "react-icons/md";
@@ -16,13 +17,7 @@ export const ButtonDocs = () => {
       <div className="usage">
         <Button text="Button" />
       </div>
-      <div className="wrapper">
-        <iframe
-          title="button-code-usage"
-          src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CButton%2520text%253D%2522Button%2522%2520%252F%253E"
-          sandbox="allow-scripts allow-same-origin"
-        ></iframe>
-      </div>
+      <Gist id="9cce63fce14538aa8eebc55613455937" />
 
       <h3>Button Sizes</h3>
       <p>
@@ -36,13 +31,7 @@ export const ButtonDocs = () => {
         <Button text="Button" size="md" />
         <Button text="Button" size="lg" />
       </div>
-      <div className="wrapper">
-        <iframe
-          title="button-size"
-          src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%253CButton%2520text%253D%2522Button%2522%2520size%253D%2522xs%2522%2520%252F%253E%250A%2520%2520%2520%253CButton%2520text%253D%2522Button%2522%2520size%253D%2522sm%2522%2520%252F%253E%250A%2520%2520%2520%253CButton%2520text%253D%2522Button%2522%2520size%253D%2522md%2522%2520%252F%253E%250A%2520%2520%2520%253CButton%2520text%253D%2522Button%2522%2520size%253D%2522lg%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
-          sandbox="allow-scripts allow-same-origin"
-        ></iframe>
-      </div>
+      <Gist id="1940e4161360fa91f7c6e15a86945f9a" />
 
       <h3>Button Variants</h3>
       <p>
@@ -60,13 +49,7 @@ export const ButtonDocs = () => {
         <Button variant="primaryToSecondary" text="Button" />
         <Button variant="secondaryToPrimary" text="Button" />
       </div>
-      <div className="wrapper">
-        <iframe
-          title="button-variants"
-          src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%253CButton%2520variant%253D%2522primary%2522%2520%252F%253E%250A%2520%2520%2520%253CButton%2520variant%253D%2522secondary%2522%2520%252F%253E%250A%2520%2520%2520%253CButton%2520variant%253D%2522ghost%2522%2520%252F%253E%250A%2520%2520%2520%253CButton%2520variant%253D%2522underline%2522%2520%252F%253E%250A%2520%2520%2520%253CButton%2520variant%253D%2522primaryToSecondary%2522%2520%252F%253E%250A%2520%2520%2520%253CButton%2520variant%253D%2522secondaryToPrimary%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
-          sandbox="allow-scripts allow-same-origin"
-        ></iframe>
-      </div>
+      <Gist id="d4a3c1f1f41812aed7a0b5771b2a29da" />
 
       <h3>Color Schemes</h3>
       <p>
@@ -84,6 +67,7 @@ export const ButtonDocs = () => {
         <Button variant="secondary" text="Button" />
         <Button colorScheme="red" variant="secondary" text="Button" />
       </div>
+      <Gist id="3599ea27eb2868bf89074582c53e24ce" />
 
       <h3>Disable Buttons</h3>
       <p>
@@ -95,7 +79,7 @@ export const ButtonDocs = () => {
         <Button isDisabled="true" text="Button" />
         <Button variant="secondary" isDisabled="true" text="Button" />
       </div>
-
+      <Gist id="c11aafa00efbf0b44c1a3fe5eaf6ca13" />
       <h3>Button with Icon</h3>
       <p>
         You can add left and right icons to the Button component using the{" "}
@@ -109,6 +93,7 @@ export const ButtonDocs = () => {
           variant="secondary"
         />
       </div>
+      <Gist id="1837a0e69a94e8253b9d079af502b1eb" />
       <h3>Social Buttons</h3>
       <p>
         We've included the colors for common social media platforms, and you can
@@ -118,6 +103,7 @@ export const ButtonDocs = () => {
         <Button leftIcon={<FaFacebook />} colorScheme="fb" text="Facebook" />
         <Button leftIcon={<FaTwitter />} colorScheme="twitter" text="Twitter" />
       </div>
+      <Gist id="04b7711de27fd76c3cfd1f2f7565c09c" />
       <p>
         The Social Media Buttons can have variants and different sizes as well.
       </p>
@@ -135,6 +121,7 @@ export const ButtonDocs = () => {
           text="Twitter"
         />
       </div>
+      <Gist id="9f9fe43b38382e1bf6fb1d9b42f1da80" />
       <h3>Rounded Buttons</h3>
       <p>
         <code>borderRadius</code> prop can be used to set the border radius of
@@ -166,6 +153,7 @@ export const ButtonDocs = () => {
           colorScheme="twitter"
         />
       </div>
+      <Gist id="a0e364ecb11bf202d38f170bbbf2d7a9" />
     </div>
   );
 };
