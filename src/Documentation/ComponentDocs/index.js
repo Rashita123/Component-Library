@@ -5,3 +5,4 @@ export { ToastDocs } from "./ToastDocs/ToastDocs";
 export { CheckboxDocs } from "./CheckboxDocs/CheckboxDocs";
 export { ImageDocs } from "./ImageDocs/ImageDocs";
 export { BadgeDocs } from "./BadgeDocs/BadgeDocs";
+export { CardDocs } from "./CardDocs/CardDocs";

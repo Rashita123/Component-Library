@@ -7,7 +7,8 @@ import {
   ToastDocs,
   CheckboxDocs,
   ImageDocs,
-  BadgeDocs
+  BadgeDocs,
+  CardDocs
 } from "./ComponentDocs";
 export const Documentation = () => {
   const { docsComponentToDisplay } = useDocsContext();
@@ -21,6 +22,7 @@ export const Documentation = () => {
       {docsComponentToDisplay === "Checkbox" && <CheckboxDocs />}
       {docsComponentToDisplay === "Image" && <ImageDocs />}
       {docsComponentToDisplay === "Badge" && <BadgeDocs />}
+      {docsComponentToDisplay === "Card" && <CardDocs />}
     </div>
   );
 };

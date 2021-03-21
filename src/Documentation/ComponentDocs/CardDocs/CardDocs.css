@@ -1,0 +1,27 @@
+.card-I {
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0.5rem 0;
+  width: 20rem;
+}
+.card-I-title {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+.card-I-subtitle {
+  font-size: 18px;
+  padding: 0.5rem 0;
+  background: #38589890;
+}
+.card-I-text {
+  font-size: 16px;
+  margin: 1rem 0.5rem;
+}
+.card-I-button-div {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
