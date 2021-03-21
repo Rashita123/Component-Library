@@ -4,7 +4,7 @@ export const DocsContext = createContext();
 
 export const DocsContextProvider = ({ children }) => {
   const [docsComponentToDisplay, setDocsComponentToDisplay] = useState(
-    "Avatar"
+    "Button"
   );
   return (
     <DocsContext.Provider
