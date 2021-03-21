@@ -12,7 +12,7 @@ export const ImageDocs = ({ src, alt }) => {
       <h2>Various Sizes Images</h2>
       <p>
         Use <code>size</code> prop to change the size of the image. Available
-        sizes are <code>sm, md, and lg</code>. The default value of size id{" "}
+        sizes are <code>xs, sm, md, and lg</code>. The default value of size id{" "}
         <code>md</code>
       </p>
       <div className="usage make-flex">
