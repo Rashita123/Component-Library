@@ -38,7 +38,10 @@ export const ImageDocs = ({ src, alt }) => {
         src of the image.
       </p>
       <div className="usage">
-        <Image src="https://bit.ly/broken-link" />
+        <Image
+          src="https://bit.ly/broken-link"
+          fallBackSrc="https://via.placeholder.com/150"
+        />
       </div>
     </div>
   );

@@ -21,5 +21,5 @@ Image.defaultProps = {
   alt: "image",
   size: "md",
   borderSize: "b1",
-  fallBackSrc: "https://via.placeholder.com/150"
+  fallBackSrc: ""
 };

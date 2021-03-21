@@ -1,7 +1,7 @@
 import "./ButtonDocs.css";
 import { HiOutlineMail } from "react-icons/hi";
-import { BiRightArrowAlt } from "react-icons/bi";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { MdNavigateNext } from "react-icons/md";
 import { Button } from "../../../MainArea/Button/Button";
 export const ButtonDocs = () => {
   return (
@@ -53,12 +53,12 @@ export const ButtonDocs = () => {
       </p>
 
       <div className="usage make-flex">
-        <Button variant="primary" />
-        <Button variant="secondary" />
-        <Button variant="ghost" />
-        <Button variant="underline" />
-        <Button variant="primaryToSecondary" />
-        <Button variant="secondaryToPrimary" />
+        <Button variant="primary" text="Button" />
+        <Button variant="secondary" text="Button" />
+        <Button variant="ghost" text="Button" />
+        <Button variant="underline" text="Button" />
+        <Button variant="primaryToSecondary" text="Button" />
+        <Button variant="secondaryToPrimary" text="Button" />
       </div>
       <div className="wrapper">
         <iframe
@@ -81,8 +81,8 @@ export const ButtonDocs = () => {
       </p>
 
       <div className="usage make-flex">
-        <Button variant="secondary" />
-        <Button colorScheme="red" variant="secondary" />
+        <Button variant="secondary" text="Button" />
+        <Button colorScheme="red" variant="secondary" text="Button" />
       </div>
 
       <h3>Disable Buttons</h3>
@@ -92,8 +92,8 @@ export const ButtonDocs = () => {
         <code>false</code>.
       </p>
       <div className="usage make-flex">
-        <Button isDisabled="true" />
-        <Button variant="secondary" isDisabled="true" />
+        <Button isDisabled="true" text="Button" />
+        <Button variant="secondary" isDisabled="true" text="Button" />
       </div>
 
       <h3>Button with Icon</h3>
@@ -104,7 +104,7 @@ export const ButtonDocs = () => {
       <div class="usage make-flex">
         <Button leftIcon={<HiOutlineMail />} text="Email" />
         <Button
-          rightIcon={<BiRightArrowAlt />}
+          rightIcon={<MdNavigateNext />}
           text="Next"
           variant="secondary"
         />
@@ -133,6 +133,37 @@ export const ButtonDocs = () => {
           colorScheme="twitter"
           variant="ghost"
           text="Twitter"
+        />
+      </div>
+      <h3>Rounded Buttons</h3>
+      <p>
+        <code>borderRadius</code> prop can be used to set the border radius of
+        the buttons. It can take up 4 values - <code>b1, b2, b3, full</code>.
+        The default value of this prop is <code>b1</code>.
+      </p>
+      <div className="usage make-flex">
+        <Button
+          text="Twitter"
+          leftIcon={<FaTwitter />}
+          borderRadius="b1"
+          colorScheme="twitter"
+        />
+        <Button
+          text="Twitter"
+          leftIcon={<FaTwitter />}
+          borderRadius="b2"
+          colorScheme="twitter"
+        />
+        <Button
+          text="Twitter"
+          leftIcon={<FaTwitter />}
+          borderRadius="b3"
+          colorScheme="twitter"
+        />
+        <Button
+          leftIcon={<FaTwitter />}
+          borderRadius="full"
+          colorScheme="twitter"
         />
       </div>
     </div>

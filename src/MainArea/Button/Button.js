@@ -6,16 +6,18 @@ export const Button = ({
   colorScheme,
   isDisabled,
   leftIcon,
-  rightIcon
+  rightIcon,
+  borderRadius
 }) => {
   return (
     <>
       <button
         disabled={isDisabled}
-        className={`button ${variant}-button${colorScheme} ${size}-button`}
+        className={`button ${variant}-button${colorScheme} ${size}-button ${borderRadius}-button`}
       >
         <span class="icon-button">
-          {leftIcon} {text} {rightIcon}
+          {leftIcon} {text !== "" && <span>{text}</span>}
+          {rightIcon !== "" && <span>{rightIcon}</span>}
         </span>
       </button>
     </>
@@ -23,9 +25,12 @@ export const Button = ({
 };
 
 Button.defaultProps = {
-  text: "Button",
+  text: "",
   variant: "primary",
   size: "md",
   colorScheme: "",
-  isDisabled: false
+  isDisabled: false,
+  borderRadius: "b1",
+  leftIcon: "",
+  rightIcon: ""
 };
