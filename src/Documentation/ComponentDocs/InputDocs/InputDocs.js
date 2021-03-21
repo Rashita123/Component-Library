@@ -1,4 +1,5 @@
 import "./InputDocs.css";
+import Gist from "react-gist";
 import { Input } from "../../../MainArea/Input/Input";
 export const InputDocs = () => {
   return (
@@ -8,13 +9,7 @@ export const InputDocs = () => {
       <div className="usage">
         <Input placeholder="Basic Input" />
       </div>
-      <div className="wrapper">
-        <iframe
-          title="Inout-code-usage"
-          src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253CInput%2520placeholder%253D%2522Basic%2520Input%2522%252F%253E"
-          sandbox="allow-scripts allow-same-origin"
-        ></iframe>
-      </div>
+      <Gist id="87473f04c5a3cbfeccdfdb41881b5414" />
 
       <h3>Changing the size of the Input</h3>
       <p>
@@ -28,13 +23,8 @@ export const InputDocs = () => {
         <Input size="md" />
         <Input size="lg" />
       </div>
-      <div className="wrapper">
-        <iframe
-          title="input-code-size"
-          src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%253CInput%2520placeholder%253D%2522extra%2520small%2520input%2522%2520size%253D%2522xs%2522%2520%252F%253E%250A%2520%2520%2520%253CInput%2520placeholder%253D%2522small%2520input%2522%2520size%253D%2522sm%2522%2520%252F%253E%250A%2520%2520%2520%253CInput%2520size%253D%2522md%2522%2520%252F%253E%250A%2520%2520%2520%253CInput%2520size%253D%2522lg%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
-          sandbox="allow-scripts allow-same-origin"
-        ></iframe>
-      </div>
+      <Gist id="b8fdfd84be59c77d60efb60deca80f7c" />
+
       <h3>Input Box Variants</h3>
       <p>
         Use <code>Variants</code> prop to have 4 different appearances of input
@@ -48,13 +38,7 @@ export const InputDocs = () => {
         <Input variant="flushed" />
         <Input variant="unstyled" />
       </div>
-      <div className="wrapper">
-        <iframe
-          title="inout-code-variants"
-          src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%2520%253CInput%2520variant%253D%2522basic%2522%252F%253E%250A%2520%2520%2520%2520%253CInput%2520variant%253D%2522filled%2522%252F%253E%250A%2520%2520%2520%2520%253CInput%2520variant%253D%2522flushed%2522%252F%253E%250A%2520%2520%2520%2520%253CInput%2520variant%253D%2522unstyled%2522%252F%253E%250A%253C%252Fdiv%253E"
-          sandbox="allow-scripts allow-same-origin"
-        ></iframe>
-      </div>
+      <Gist id="c424b16c09fdf51fcddaeda7f3515a03" />
       <h3>Different Input Type Buttons</h3>
       <p>
         Buttons can be set to store different type of values, like{" "}
@@ -66,13 +50,8 @@ export const InputDocs = () => {
         <Input inputType="text" />
         <Input inputType="password" placeholder="Enter password" />
       </div>
-      <div className="wrapper">
-        <iframe
-          title="input-type"
-          src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%253CInput%2520inputType%253D%2522text%2522%252F%253E%250A%2520%2520%2520%253CInput%2520inputType%253D%2522password%2522%2520placeholder%253D%2522Enter%2520password%2522%252F%253E%250A%253C%252Fdiv%253E"
-          sandbox="allow-scripts allow-same-origin"
-        ></iframe>
-      </div>
+      <Gist id="5fc6a007fae956e98e6253c2dcb82bab" />
+
       <h3>Disabled Input</h3>
       <p>
         Use <code>isDisabled</code> prop to set the disabled value of the input
@@ -83,13 +62,7 @@ export const InputDocs = () => {
         <Input isDisabled={true} />
         <Input isDisabled={false} />
       </div>
-      <div className="wrapper">
-        <iframe
-          title="disabled input"
-          src="https://carbon.now.sh/embed?bg=rgba%28152%2C251%2C152%2C1%29&t=3024-night&wt=none&l=javascript&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%253CInput%2520isDisabled%253D%257Btrue%257D%2520%252F%253E%250A%2520%2520%2520%253CInput%2520isDisabled%253D%257Bfalse%257D%2520%252F%253E%250A%253C%252Fdiv%253E"
-          sandbox="allow-scripts allow-same-origin"
-        ></iframe>
-      </div>
+      <Gist id="c0a1db6af502fb5a9aff28d65b1a62c0" />
     </div>
   );
 };
