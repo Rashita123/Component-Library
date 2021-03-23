@@ -86,8 +86,8 @@ export const ButtonDocs = () => {
         <code>false</code>.
       </p>
       <div className="usage make-flex">
-        <Button isDisabled="true" text="Button" />
-        <Button variant="secondary" isDisabled="true" text="Button" />
+        <Button isDisabled={true} text="Button" />
+        <Button variant="secondary" isDisabled={true} text="Button" />
       </div>
       <Gist id="c11aafa00efbf0b44c1a3fe5eaf6ca13" />
       <h3>Button with Icon</h3>
