@@ -1,10 +1,20 @@
 import "./ButtonDocs.css";
+import { useState } from "react";
 import Gist from "react-gist";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { MdNavigateNext } from "react-icons/md";
 import { Button } from "../../../MainArea/Button/Button";
+import { BsPlus } from "react-icons/bs";
+import { AiOutlineMinus } from "react-icons/ai";
 export const ButtonDocs = () => {
+  const [count, setCount] = useState(0);
+  const incrementHandler = () => {
+    setCount((count) => count + 1);
+  };
+  const decrementHandler = () => {
+    setCount((coumt) => count - 1);
+  };
   return (
     <div className="buttonDocs">
       <h1>Button</h1>
@@ -154,6 +164,23 @@ export const ButtonDocs = () => {
         />
       </div>
       <Gist id="a0e364ecb11bf202d38f170bbbf2d7a9" />
+
+      <h3>OnClick Handler for button</h3>
+      <p>
+        Pass any function to the <code>onClickHandler</code> prop for the Button
+        component and it will be executed when the button is clicked. An example
+        of the use case is demonstrated below, where on clicking the Increment
+        button, the value of count changes.
+      </p>
+      <div className="usage">
+        <Button leftIcon={<BsPlus />} onClickHandler={incrementHandler} />
+        <span>{count}</span>
+        <Button
+          leftIcon={<AiOutlineMinus />}
+          onClickHandler={decrementHandler}
+        />
+      </div>
+      <Gist id="3635d321524acbf1513fe4f11876b09e" />
     </div>
   );
 };

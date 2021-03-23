@@ -7,11 +7,15 @@ export const Button = ({
   isDisabled,
   leftIcon,
   rightIcon,
-  borderRadius
+  borderRadius,
+  onClickHandler,
+  ...rest
 }) => {
   return (
     <>
       <button
+        onClick={onClickHandler}
+        style={{ ...rest }}
         disabled={isDisabled}
         className={`button ${variant}-button${colorScheme} ${size}-button ${borderRadius}-button`}
       >

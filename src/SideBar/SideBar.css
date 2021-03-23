@@ -8,6 +8,7 @@
   position: fixed;
   top: 8rem;
   right: 5rem;
+
   /* flex-grow: 1; */
 }
 .searchbar {
@@ -36,7 +37,7 @@
   margin: 0;
   padding: 6px 0;
   padding-left: 2rem;
-  color: #1b1d1d;
+  color: black;
 }
 
 .listing > .title:hover {
