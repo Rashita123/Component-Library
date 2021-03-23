@@ -7,3 +7,4 @@ export { CheckboxDocs } from "./CheckboxDocs/CheckboxDocs";
 export { ImageDocs } from "./ImageDocs/ImageDocs";
 export { BadgeDocs } from "./BadgeDocs/BadgeDocs";
 export { CardDocs } from "./CardDocs/CardDocs";
+export { AlertDocs } from "./AlertDocs/AlertDocs";
