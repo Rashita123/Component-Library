@@ -8,9 +8,5 @@ export const ComponentsDatabse = [
   "Card",
   "Image",
   "Input",
-  "List",
-  "Navigation",
-  "Model",
-  "Rating",
-  "Slider"
+  "List"
 ];
