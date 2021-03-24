@@ -37,4 +37,7 @@
   .header {
     justify-content: flex-start;
   }
+  .fork-ui-heading {
+    display: none;
+  }
 }

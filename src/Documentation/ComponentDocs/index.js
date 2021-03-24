@@ -8,3 +8,4 @@ export { ImageDocs } from "./ImageDocs/ImageDocs";
 export { BadgeDocs } from "./BadgeDocs/BadgeDocs";
 export { CardDocs } from "./CardDocs/CardDocs";
 export { AlertDocs } from "./AlertDocs/AlertDocs";
+export { ListDocs } from "./ListDocs/ListDocs";

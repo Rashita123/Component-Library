@@ -1,7 +1,9 @@
 import "./ToastDocs.css";
+import { useState } from "react";
 import { Button } from "../../../MainArea/Button/Button";
 import { Toast } from "../../../MainArea/Toast/Toast";
 export const ToastDocs = () => {
+  const [toastStack, setToastStack] = useState([]);
   return (
     <div>
       <h1>Toast</h1>
@@ -11,10 +13,20 @@ export const ToastDocs = () => {
         default is 5 seconds. The toast component is used to give feedback to
         users after an action has taken place.
       </p>
-      <div classname="usage">
-        <Button text="Show Toast" />
+      <div className="usage">
+        <Button
+          onClickHandler={() =>
+            setToastStack((taostStack) => [...toastStack, 1])
+          }
+          text="Show Toast"
+        />
+        <Button
+          text="Show top toast"
+          onClickHandler={() =>
+            setToastStack((taostStack) => [...toastStack, 1])
+          }
+        />
       </div>
-      <Toast />
     </div>
   );
 };

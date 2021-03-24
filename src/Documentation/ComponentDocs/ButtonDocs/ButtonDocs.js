@@ -95,7 +95,7 @@ export const ButtonDocs = () => {
         You can add left and right icons to the Button component using the{" "}
         <code>leftIcon</code> and <code>rightIcon</code> props respectively.
       </p>
-      <div class="usage make-flex">
+      <div className="usage make-flex">
         <Button leftIcon={<HiOutlineMail />} text="Email" />
         <Button
           rightIcon={<MdNavigateNext />}

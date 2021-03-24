@@ -50,6 +50,7 @@
   font-weight: 600;
   border-left: 3px solid var(--dark-green-color);
 }
+
 @media only screen and (max-width: 600px) {
   .sidebar {
     display: none;

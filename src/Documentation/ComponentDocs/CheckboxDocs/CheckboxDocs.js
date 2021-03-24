@@ -1,4 +1,5 @@
 import "./CheckboxDocs.css";
+import Gist from "react-gist";
 import { Checkbox } from "../../../MainArea/Checkbox/Checkbox";
 export const CheckboxDocs = () => {
   return (
@@ -11,6 +12,7 @@ export const CheckboxDocs = () => {
       <div className="usage">
         <Checkbox text="Checkbox" />
       </div>
+      <Gist id="3587cb555102eef2a29f2bd6b9aae137" />
     </div>
   );
 };

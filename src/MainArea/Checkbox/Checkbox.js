@@ -1,10 +1,14 @@
 import "./Checkbox.css";
 export const Checkbox = ({ text }) => {
   return (
-    <div className="checkbox">
+    <label className="container-checkbox">
+      {text}
       <input type="checkbox" />
-      <span class="checkmark"></span>
-      <span>{text}</span>
-    </div>
+      <span className="checkmark"></span>
+    </label>
   );
+};
+
+Checkbox.defaultProps = {
+  text: "Checkbox"
 };

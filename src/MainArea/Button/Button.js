@@ -19,7 +19,7 @@ export const Button = ({
         disabled={isDisabled}
         className={`button ${variant}-button${colorScheme} ${size}-button ${borderRadius}-button`}
       >
-        <span class="icon-button">
+        <span className="icon-button">
           {leftIcon} {text !== "" && <span>{text}</span>}
           {rightIcon !== "" && <span>{rightIcon}</span>}
         </span>
