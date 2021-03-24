@@ -173,11 +173,16 @@ export const ButtonDocs = () => {
         button, the value of count changes.
       </p>
       <div className="usage">
-        <Button leftIcon={<BsPlus />} onClickHandler={incrementHandler} />
+        <Button
+          leftIcon={<BsPlus />}
+          onClickHandler={incrementHandler}
+          borderRadius="full"
+        />
         <span>{count}</span>
         <Button
           leftIcon={<AiOutlineMinus />}
           onClickHandler={decrementHandler}
+          borderRadius="full"
         />
       </div>
       <Gist id="3635d321524acbf1513fe4f11876b09e" />

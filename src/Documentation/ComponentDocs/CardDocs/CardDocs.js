@@ -3,6 +3,7 @@ import { Button } from "../../../MainArea/Button/Button";
 import { Image } from "../../../MainArea/Image/Image";
 import { FiPlus } from "react-icons/fi";
 import { BsCode } from "react-icons/bs";
+import Gist from "react-gist";
 export const CardDocs = () => {
   return (
     <div>
@@ -37,16 +38,8 @@ export const CardDocs = () => {
             />
           </div>
         </div>
-
-        {/* To show code */}
-        <span className="showcode">
-          <Button
-            leftIcon={<BsCode />}
-            borderRadius="full"
-            variant="secondary"
-          />
-        </span>
       </div>
+      <Gist id="b4f52f300fdfa4b54d85d49a2d3deb2a" />
 
       <div className="usage">
         <div className="card card-II">
@@ -67,6 +60,7 @@ export const CardDocs = () => {
           </div>
         </div>
       </div>
+      <Gist id="c941dcf22466668739bd2d9fa23cc874" />
     </div>
   );
 };
