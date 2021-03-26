@@ -1,7 +1,7 @@
 import "./Header.css";
-export const Header = () => {
+export const Header = ({ setHomeOrDocs }) => {
   return (
-    <div>
+    <div className="page-header">
       <div className="container header">
         <div className="icon-name">
           <svg
@@ -39,8 +39,12 @@ export const Header = () => {
         </div>
 
         <div className="header-nav">
-          <a href="/">Home</a>
-          <a href="/">Documentation</a>
+          <a href="/" onClick={() => setHomeOrDocs("Home")}>
+            Home
+          </a>
+          <a href="/" onClick={() => setHomeOrDocs("Docs")}>
+            Documentation
+          </a>
           <a href="/">Github</a>
         </div>
       </div>

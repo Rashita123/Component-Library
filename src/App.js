@@ -1,15 +1,16 @@
-import "./styles.css";
-import { Header } from "./Header/Header";
-import { SideBar } from "./SideBar/SideBar";
-import { Documentation } from "./Documentation/Documentation";
+import { useState } from "react";
+import Home from "./Home";
+import DocumentationPage from "./DocumentaionPage";
 export default function App() {
+  const [homeOrDocs, setHomeOrDocs] = useState("Home");
   return (
     <div className="App">
-      <Header />
-      <div className="main-area container">
-        <Documentation />
-        <SideBar />
-      </div>
+      {homeOrDocs === "Home" && (
+        <Home homeOrDocs={homeOrDocs} setHomeOrDocs={setHomeOrDocs} />
+      )}
+      {homeOrDocs === "Docs" && (
+        <DocumentationPage setHomeOrDocs={setHomeOrDocs} />
+      )}
     </div>
   );
 }

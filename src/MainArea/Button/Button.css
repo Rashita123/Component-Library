@@ -35,9 +35,11 @@
   opacity: 0.9;
 }
 .ghost-button {
+  border: 2px solid white;
   color: var(--dark-green-color);
 }
 .ghost-button:hover {
+  border: 2px solid #ecfdf5;
   background: #ecfdf5;
 }
 .underline-button {

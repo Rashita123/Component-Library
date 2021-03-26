@@ -1,3 +1,6 @@
+.page-header {
+  border-top: 5px solid var(--dark-green-color);
+}
 .container {
   width: 60%;
   margin: auto;
@@ -30,7 +33,17 @@
   border-bottom: 3px solid var(--dark-green-color);
 }
 
+.header-nav > a:active {
+  color: var(--dark-green-color);
+  border-bottom: 3px solid var(--dark-green-color);
+}
+
 @media only screen and (max-width: 600px) {
+  .page-header {
+    border-bottom: 2px solid var(--dark-green-color);
+    border-top: none;
+    padding: 0.5rem;
+  }
   .container {
     width: 90%;
   }
