@@ -39,13 +39,9 @@ export const Header = ({ setHomeOrDocs }) => {
         </div>
 
         <div className="header-nav">
-          <a href="/" onClick={() => setHomeOrDocs("Home")}>
-            Home
-          </a>
-          <a href="/" onClick={() => setHomeOrDocs("Docs")}>
-            Documentation
-          </a>
-          <a href="/">Github</a>
+          <p onClick={() => setHomeOrDocs("Home")}>Home</p>
+          <p onClick={() => setHomeOrDocs("Docs")}>Documentation</p>
+          <a href="https://github.com/Rashita123/ForkUI">Github</a>
         </div>
       </div>
     </div>
