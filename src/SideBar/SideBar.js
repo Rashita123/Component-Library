@@ -7,7 +7,6 @@ export const SideBar = ({ showSidebar, setShowSidebar }) => {
     docsComponentToDisplay,
     setDocsComponentToDisplay
   } = useDocsContext();
-  console.log(window.innerWidth < 600);
   return (
     <div
       style={{
