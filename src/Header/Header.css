@@ -28,6 +28,7 @@ a {
   text-decoration: none;
   color: black;
   transition: 0.5s ease-out;
+  cursor: pointer;
 }
 .header-nav > p:hover,
 a:hover {

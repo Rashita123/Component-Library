@@ -1,6 +1,6 @@
 import "./InputDocs.css";
 import Gist from "react-gist";
-import { Input } from "../../../MainArea/Input/Input";
+import { Input } from "forkui-lib";
 export const InputDocs = () => {
   return (
     <div>

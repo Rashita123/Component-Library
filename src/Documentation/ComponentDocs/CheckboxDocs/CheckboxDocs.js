@@ -1,6 +1,6 @@
 import "./CheckboxDocs.css";
 import Gist from "react-gist";
-import { Checkbox } from "../../../MainArea/Checkbox/Checkbox";
+import { Checkbox } from "forkui-lib";
 export const CheckboxDocs = () => {
   return (
     <div>

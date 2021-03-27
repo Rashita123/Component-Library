@@ -1,6 +1,6 @@
 import "./ImageDocs.css";
 import Gist from "react-gist";
-import { Image } from "../../../MainArea/Image/Image";
+import { Image } from "forkui-lib";
 export const ImageDocs = ({ src, alt }) => {
   return (
     <div>

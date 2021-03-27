@@ -1,6 +1,6 @@
 import "./ListDocs.css";
 import Gist from "react-gist";
-import { List, ListItem } from "../../../MainArea/List/List";
+import { List, ListItem } from "forkui-lib";
 export const ListDocs = () => {
   return (
     <div>

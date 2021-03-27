@@ -1,4 +1,4 @@
-import { Avatar } from "../../../MainArea/Avatar/Avatar";
+import { Avatar } from "forkui-lib";
 import Gist from "react-gist";
 export const AvatarDocs = () => {
   return (

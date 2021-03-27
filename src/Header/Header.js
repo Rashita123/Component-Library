@@ -1,9 +1,9 @@
 import "./Header.css";
-export const Header = ({ setHomeOrDocs }) => {
+export const Header = ({ homeOrDocs, setHomeOrDocs }) => {
   return (
     <div className="page-header">
       <div className="container header">
-        <div className="icon-name">
+        <div style={{ cursor: "pointer" }} className="icon-name">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"

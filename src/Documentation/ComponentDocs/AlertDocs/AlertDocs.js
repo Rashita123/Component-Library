@@ -1,6 +1,6 @@
 import "./AlertDocs.css";
 import Gist from "react-gist";
-import { Alert } from "../../../MainArea/Alert/Alert";
+import { Alert } from "forkui-lib";
 export const AlertDocs = () => {
   return (
     <div>

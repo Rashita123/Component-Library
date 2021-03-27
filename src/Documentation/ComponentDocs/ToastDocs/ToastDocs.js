@@ -1,7 +1,6 @@
 import "./ToastDocs.css";
 import { useState } from "react";
-import { Button } from "../../../MainArea/Button/Button";
-import { Toast } from "../../../MainArea/Toast/Toast";
+import { Button, Toast } from "forkui-lib";
 export const ToastDocs = () => {
   const [toastStack, setToastStack] = useState([]);
   return (

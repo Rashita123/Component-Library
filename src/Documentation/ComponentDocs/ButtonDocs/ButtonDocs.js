@@ -4,9 +4,9 @@ import Gist from "react-gist";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { MdNavigateNext } from "react-icons/md";
-import { Button } from "../../../MainArea/Button/Button";
 import { BsPlus } from "react-icons/bs";
 import { AiOutlineMinus } from "react-icons/ai";
+import { Button } from "forkui-lib";
 export const ButtonDocs = () => {
   const [count, setCount] = useState(0);
   const incrementHandler = () => {

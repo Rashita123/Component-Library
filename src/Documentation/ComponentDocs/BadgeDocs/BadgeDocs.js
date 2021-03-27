@@ -1,6 +1,6 @@
 import "./BadgeDocs.css";
 import Gist from "react-gist";
-import { Badge } from "../../../MainArea/Badge/Badge";
+import { Badge } from "forkui-lib";
 export const BadgeDocs = () => {
   return (
     <div>

@@ -1,6 +1,8 @@
 import "./Home.css";
 import React from "react";
-import { Button } from "./MainArea/Button/Button";
+import { FiArrowRight } from "react-icons/fi";
+import { FaGithub } from "react-icons/fa";
+import { Button } from "forkui-lib";
 export default function Home({ setHomeOrDocs }) {
   return (
     <div className="home">
@@ -10,9 +12,10 @@ export default function Home({ setHomeOrDocs }) {
         <br />
         ForkUI in seconds!
       </p>
-      <div>
+      <div class="home__buttons">
         <span className="home__button-I">
           <Button
+            rightIcon={<FiArrowRight />}
             onClickHandler={() => setHomeOrDocs("Docs")}
             text="Get Started"
             variant="secondary"
@@ -22,6 +25,7 @@ export default function Home({ setHomeOrDocs }) {
         </span>
         <a href="https://github.com/Rashita123/ForkUI">
           <Button
+            leftIcon={<FaGithub />}
             text="Github"
             variant="primary"
             background="white"

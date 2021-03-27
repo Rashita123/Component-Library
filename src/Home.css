@@ -25,6 +25,11 @@
   color: white;
   font-size: 2rem;
 }
+.home__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .home__button-I {
   margin-right: 1rem;
 }
