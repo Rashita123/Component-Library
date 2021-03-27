@@ -2,7 +2,7 @@ import "./ToastDocs.css";
 import { useState } from "react";
 import { Button, Toast } from "forkui-lib";
 export const ToastDocs = () => {
-  const [toastStack, setToastStack] = useState([]);
+  const [toastDisplay, setToastDisplay] = useState(false);
   return (
     <div>
       <h1>Toast</h1>
@@ -13,18 +13,8 @@ export const ToastDocs = () => {
         users after an action has taken place.
       </p>
       <div className="usage">
-        <Button
-          onClickHandler={() =>
-            setToastStack((taostStack) => [...toastStack, 1])
-          }
-          text="Show Toast"
-        />
-        <Button
-          text="Show top toast"
-          onClickHandler={() =>
-            setToastStack((taostStack) => [...toastStack, 1])
-          }
-        />
+        <Button text="Show Toast" />
+        <Button text="Show top toast" />
       </div>
     </div>
   );

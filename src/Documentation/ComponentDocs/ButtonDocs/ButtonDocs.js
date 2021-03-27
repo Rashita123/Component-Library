@@ -35,7 +35,7 @@ export const ButtonDocs = () => {
         set the value to <code>xs</code>, <code>sm</code>, <code>md</code>, or{" "}
         <code>lg</code>.
       </p>
-      <div className="usage">
+      <div className="usage make-flex">
         <Button text="Button" size="xs" />
         <Button text="Button" size="sm" />
         <Button text="Button" size="md" />
@@ -172,7 +172,7 @@ export const ButtonDocs = () => {
         of the use case is demonstrated below, where on clicking the Increment
         button, the value of count changes.
       </p>
-      <div className="usage">
+      <div className="usage make-flex">
         <Button
           leftIcon={<BsPlus />}
           onClickHandler={incrementHandler}
