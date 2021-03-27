@@ -42,11 +42,18 @@ a:active {
   border-bottom: 3px solid var(--dark-green-color);
 }
 
+.open-sidebar-icon {
+  position: fixed;
+  right: 2rem;
+  display: none;
+  cursor: pointer;
+}
 @media only screen and (max-width: 600px) {
   .page-header {
     border-bottom: 2px solid var(--dark-green-color);
     border-top: none;
     padding: 0.5rem;
+    z-index: 3;
   }
   .container {
     width: 90%;
@@ -56,5 +63,8 @@ a:active {
   }
   .fork-ui-heading {
     display: none;
+  }
+  .open-sidebar-icon {
+    display: block;
   }
 }

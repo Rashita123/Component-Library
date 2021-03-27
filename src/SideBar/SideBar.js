@@ -2,13 +2,24 @@ import "./SideBar.css";
 import { useDocsContext } from "../ViewContext";
 import { Input } from "../MainArea/Input/Input";
 import { ComponentsDatabse } from "./ComponentsDatabse";
-export const SideBar = () => {
+export const SideBar = ({ showSidebar, setShowSidebar }) => {
   const {
     docsComponentToDisplay,
     setDocsComponentToDisplay
   } = useDocsContext();
+  console.log(window.innerWidth < 600);
   return (
-    <div className="sidebar">
+    <div
+      style={{
+        display:
+          window.innerWidth < 600
+            ? showSidebar
+              ? "block"
+              : "none"
+            : "inline-flex"
+      }}
+      className="sidebar"
+    >
       <div className="searchbar">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +64,10 @@ export const SideBar = () => {
                 ? "title title-active"
                 : "title"
             }
-            onClick={() => setDocsComponentToDisplay(listItem)}
+            onClick={() => {
+              setDocsComponentToDisplay(listItem);
+              setShowSidebar(false);
+            }}
             key={index}
           >
             {listItem}

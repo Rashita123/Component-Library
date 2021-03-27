@@ -1,5 +1,6 @@
 import "./Header.css";
-export const Header = ({ homeOrDocs, setHomeOrDocs }) => {
+import { FaBars } from "react-icons/fa";
+export const Header = ({ setHomeOrDocs, showSidebar, setShowSidebar }) => {
   return (
     <div className="page-header">
       <div className="container header">
@@ -42,6 +43,12 @@ export const Header = ({ homeOrDocs, setHomeOrDocs }) => {
           <p onClick={() => setHomeOrDocs("Home")}>Home</p>
           <p onClick={() => setHomeOrDocs("Docs")}>Documentation</p>
           <a href="https://github.com/Rashita123/ForkUI">Github</a>
+          <span
+            onClick={() => setShowSidebar(!showSidebar)}
+            className="open-sidebar-icon"
+          >
+            <FaBars />
+          </span>
         </div>
       </div>
     </div>
