@@ -19,10 +19,16 @@
   color: var(--dark-green-color);
 }
 .header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
   display: flex;
   align-items: center;
 }
-.header-nav > p,
+.nav-links > p,
 a {
   margin-left: 0.85rem;
   text-decoration: none;
@@ -30,21 +36,21 @@ a {
   transition: 0.5s ease-out;
   cursor: pointer;
 }
-.header-nav > p:hover,
+.nav-links > p:hover,
 a:hover {
   color: var(--dark-green-color);
   border-bottom: 3px solid var(--dark-green-color);
 }
 
-.header-nav > p:active,
+.nav-links > p:active,
 a:active {
   color: var(--dark-green-color);
   border-bottom: 3px solid var(--dark-green-color);
 }
 
 .open-sidebar-icon {
-  position: fixed;
-  right: 2rem;
+  position: relative;
+  float: right;
   display: none;
   cursor: pointer;
 }

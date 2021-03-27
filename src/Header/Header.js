@@ -40,9 +40,11 @@ export const Header = ({ setHomeOrDocs, showSidebar, setShowSidebar }) => {
         </div>
 
         <div className="header-nav">
-          <p onClick={() => setHomeOrDocs("Home")}>Home</p>
-          <p onClick={() => setHomeOrDocs("Docs")}>Documentation</p>
-          <a href="https://github.com/Rashita123/ForkUI">Github</a>
+          <div className="nav-links">
+            <p onClick={() => setHomeOrDocs("Home")}>Home</p>
+            <p onClick={() => setHomeOrDocs("Docs")}>Documentation</p>
+            <a href="https://github.com/Rashita123/ForkUI">Github</a>
+          </div>
           <span
             onClick={() => setShowSidebar(!showSidebar)}
             className="open-sidebar-icon"

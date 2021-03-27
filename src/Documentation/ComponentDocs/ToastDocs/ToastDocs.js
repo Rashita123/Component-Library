@@ -12,9 +12,19 @@ export const ToastDocs = () => {
         default is 5 seconds. The toast component is used to give feedback to
         users after an action has taken place.
       </p>
-      <div className="usage">
-        <Button text="Show Toast" />
-        <Button text="Show top toast" />
+      <div className="usage make-flex">
+        <Button
+          text="Show Toast"
+          size="sm"
+          // onClickHandler={() => setToastDisplay(true)}
+        />
+        {/* {toastDisplay && (
+          <Toast
+            toastDisplay={toastDisplay}
+            setToastDisplay={setToastDisplay}
+          />
+        )} */}
+        <Button text="Show top toast" size="sm" />
       </div>
     </div>
   );
