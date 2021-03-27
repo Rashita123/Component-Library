@@ -10,7 +10,8 @@ import {
   BadgeDocs,
   CardDocs,
   AlertDocs,
-  ListDocs
+  ListDocs,
+  GettingStarted
 } from "./ComponentDocs";
 export const Documentation = () => {
   const { docsComponentToDisplay } = useDocsContext();
@@ -27,6 +28,7 @@ export const Documentation = () => {
       {docsComponentToDisplay === "Card" && <CardDocs />}
       {docsComponentToDisplay === "Alert" && <AlertDocs />}
       {docsComponentToDisplay === "List" && <ListDocs />}
+      {docsComponentToDisplay === "GettingStarted" && <GettingStarted />}
     </div>
   );
 };

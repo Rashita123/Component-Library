@@ -55,7 +55,16 @@ export const SideBar = ({ showSidebar, setShowSidebar }) => {
         <Input variant="unstyled" />
       </div>
       <div className="listing">
-        <h2>Getting Started</h2>
+        <h2
+          className={
+            docsComponentToDisplay === "GettingStarted"
+              ? "getting-started-title-active"
+              : "getting-started-title"
+          }
+          onClick={() => setDocsComponentToDisplay("GettingStarted")}
+        >
+          Getting Started
+        </h2>
         {ComponentsDatabse.map((listItem, index) => (
           <p
             className={
