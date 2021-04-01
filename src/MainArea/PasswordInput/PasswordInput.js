@@ -5,7 +5,7 @@ import { useState } from "react";
 export const PasswordInput = () => {
   const [passwordShow, setPasswordShow] = useState(false);
   return (
-    <div className="password-input-div">
+    <div className="password-input-div make-flex">
       <Input
         placeholder="Enter your password"
         inputType={passwordShow ? "text" : "password"}
