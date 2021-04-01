@@ -2,10 +2,10 @@ export const ComponentsDatabse = [
   "Button",
   "Avatar",
   "Alert",
-  "Toast",
+  // "Toast",
   "Checkbox",
   "Badge",
-  "Card",
+  // "Card",
   "Image",
   "Input",
   "List"

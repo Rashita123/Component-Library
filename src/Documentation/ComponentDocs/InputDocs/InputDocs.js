@@ -1,6 +1,7 @@
 import "./InputDocs.css";
 import Gist from "react-gist";
 import { Input } from "forkui-lib";
+import { PasswordInput } from "../../../MainArea/PasswordInput/PasswordInput";
 export const InputDocs = () => {
   return (
     <div>
@@ -63,6 +64,11 @@ export const InputDocs = () => {
         <Input isDisabled={false} />
       </div>
       <Gist id="c0a1db6af502fb5a9aff28d65b1a62c0" />
+      <h3>Password Show Input</h3>
+      <div className="usage">
+        <PasswordInput />
+      </div>
+      <Gist id="22ae05c5028986a418d06764aca5b7e3" />
     </div>
   );
 };
